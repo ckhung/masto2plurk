@@ -1,0 +1,20 @@
+# masto2plurk config file
+
+# Minimum interval (in minutes) between polling Mastodon for new toots
+polling_period = 5
+
+# Optional: fallback start date if no cache is found (ISO 8601 format)
+fallback_since = "2024-01-01T00:00:00Z"
+
+# Optional: visibility filter ("public", "unlisted", "private", "direct")
+visibility_filter = "public"
+
+# Optional: post format mode ("plain", "rich")
+format_mode = "rich"
+
+# Logging
+log_file = "~/.masto2plurk/log.txt"
+log_level = "INFO"
+
+[mastodon]
+instance = "https://social.slat.org/"
